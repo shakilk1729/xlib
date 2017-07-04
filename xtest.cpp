@@ -35,6 +35,16 @@ int main()
 	{
 		cout << "file ="<<myfile<< " doesn not exist" <<endl;
 	}
+
+	xstring ss = "this is in all Lower except Two";
+	xtolower(ss);
+	cout << ss<<endl;
+
+	xtoupper(ss);
+	cout << ss<<endl;
+	
+	xstring needle = "ExcePt";
+	cout << xstrcasestr(ss,needle)<<endl;
 	
 	return 0;
 }
