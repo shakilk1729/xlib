@@ -33,6 +33,7 @@ void xstrcpy(xstring &dest, const xstring &src, size_t len);
 vector<xstring> xsplit(const xstring &hay_string, const xstring &needle);
 vector<xstring> xsplit(const xstring &hay_string);
 string xstrstr(const xstring &haystack, const xstring &needle);
+string xstrnstr(const xstring &haystack, const xstring &needle, size_t len);
 void xtoupper(xstring &s);
 void xtolower(xstring &s);
 string xstrcasestr(const xstring &haystack, const xstring &needle);

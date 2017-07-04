@@ -64,8 +64,11 @@ int main()
 	xtoupper(ss);
 	cout << ss<<endl;
 	
-	xstring needle = "ExcePt";
+	xstring needle = "except";
 	cout << xstrcasestr(ss,needle)<<endl;
+
+	ss = "this is in all Lower except Two";
+	cout << xstrnstr(ss,needle,26)<<endl;
 	
 	return 0;
 }

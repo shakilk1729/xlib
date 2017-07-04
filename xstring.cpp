@@ -84,6 +84,17 @@ string xstrstr(const xstring &haystack, const xstring &needle)
     return xstring("");
 }
 
+string xstrnstr(const xstring &haystack, const xstring &needle, size_t len)
+{
+	xstring lhaystack(haystack);
+	lhaystack = lhaystack.substr(0, len);
+
+    size_t pos = lhaystack.find(needle);
+    if (pos != std::xstring::npos)
+        return haystack.substr(pos);
+    return xstring("");
+}
+
 //Modifies the original string
 void xtoupper(xstring &s)
 {
