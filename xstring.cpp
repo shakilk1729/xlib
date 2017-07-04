@@ -64,16 +64,19 @@ string xstrstr(const xstring &haystack, const xstring &needle)
     return xstring("");
 }
 
+//Modifies the original string
 void xtoupper(xstring &s)
 {
     std::transform(s.begin(),s.end(), s.begin(), ::toupper);
 }
 
+//Modifies the Original string
 void xtolower(xstring &s)
 {
     std::transform(s.begin(),s.end(), s.begin(), ::tolower);
 }
 
+//Returns a newly constructed substring
 string xstrcasestr(const xstring &haystack, const xstring &needle)
 {
     xstring lhaystack(haystack);
