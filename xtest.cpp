@@ -64,11 +64,18 @@ int main()
 	xtoupper(ss);
 	cout << ss<<endl;
 	
-	xstring needle = "except";
+	xstring needle = "excep";
 	cout << xstrcasestr(ss,needle)<<endl;
 
 	ss = "this is in all Lower except Two";
 	cout << xstrnstr(ss,needle,26)<<endl;
 	
+	xstring win_path = "c:\\program Files\\Validedge\\velab";
+	vector<xstring> v = xsplit(win_path,"\\");
+
+	cout <<"------------------------\n";
+	for(auto vv = v.begin(); vv != v.end(); ++vv)
+		cout << *vv<<endl;
+		
 	return 0;
 }
